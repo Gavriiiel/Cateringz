@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAteriNgz</title>
+    <link rel="icon" type='image/png' href="LOGOCATERING.png" />
+    <link rel="stylesheet" href="styleregis.css" />
+    <script src="regisnow.js" defer></script> 
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav_bg">
+                    <div class="logo">
+                        <img src="assets/LOGOCATERING.png" alt="Logo">
+                    </div>
+                    <div class="navigation">
+                        <ul class="nav_bg">
+                            <li class="nav_item">
+                                <a href="home.html" class="nav_link">Home</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="product.html" class="nav_link">Product</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="aboutus.html" class="nav_link">About Us</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="testi.html" class="nav_link">Testimonial</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="register.html" class="nav_link">Register</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </nav>
+    </header>
+    <form onsubmit="return validateData()">
+        <h2>Register</h2>
+        <div class="form_group fullname">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter Your Name">
+        </div>
+        <div class="form_group email">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="Enter Your Email Address">
+        </div>
+        <div class="form_group address">
+            <label for="address">Address</label>
+            <input type="address" id="address" placeholder="Enter your Address Location">
+            <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+        </div>
+        <div class="form_group date">
+            <label for="date">Birth Date</label>
+            <input type="date" id="date" placeholder="Select your date">
+        </div>
+        <div class="form_group gender">
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="" selected disabled>Select Your Gender</option>
+                <option id="male" value="Male">Male</option>
+                <option id="female" value="Female">Female</option>
+            </select>
+        </div>
+        <div class="form_group submit_btn">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <footer class="footer">
+      <div class="footer_box">
+          <h3>Contact</h3>
+          <p>Email: christian.hariyadi@binus.ac.id</p>
+          <p>Phone Number: 0895-1400-6042</p>
+      </div>
+  </footer>
+</body>
+</html>

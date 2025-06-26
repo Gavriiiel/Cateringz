@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary_color: #dd8930;
+  --secondary_color: #f5d4b7;
+  --heading_color: #000000;
+  --body_bg: #fff1e2;
+  --text_color: #000000;
+  --font_name: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--body_bg);
+  font-family: var(--font_name);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: var(--text_color);
+  font-size: 1.5rem;
+  line-height: 28px;
+}
+
+h1, h2, h3, h4 {
+  color: var(--heading_color);
+  font-weight: 500;
+}
+
+.logo img {
+  width: 80px;
+  margin-top: 2px;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+.highlight {
+  color: var(--primary_color);
+  width: 180%;
+}
+
+.home_content p {
+  width: 150%;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+/* Header */
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  z-index: 9999;
+  background-color: #ffdebab1;
+}
+
+.nav_bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2.7rem;
+}
+
+.nav_link {
+  color: var(--text_color);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav_link:hover {
+  color: var(--primary_color);
+}
+
+.nav_item:nth-child(1) a {
+  color: #000000;
+  position: relative;
+  z-index: 9;
+}
+
+/* Home */
+.home_bg {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+
+.home_content {
+  width: 30%;
+}
+
+.home_img {
+  width: 30%;
+}
+
+.home_img img {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.home_content h2 {
+  font-size: 3rem;
+  line-height: 65px;
+}
+
+.home_content p {
+  margin-top: 40px;
+}
+
+.home_content {
+  padding-top: 40px;
+}
+
+/* Title */
+.title_up {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title_up h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* Food */
+.food_bg {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  background-color: wheat;
+}
+
+.food_bg_small {
+  width: 33%;
+  display: flex;
+  column-gap: 1rem;
+  cursor: pointer;
+  background: var(--primary_color);
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.food_img {
+  width: 25%;
+}
+
+.food_img img {
+  width: 100%;
+}
+
+.food_desc-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food_price {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.food_desc {
+  width: 75%;
+}
+
+.food_bg_small:hover {
+  transform: translateY(-1rem);
+}
+
+/* footer */
+.footer {
+  background-color: var(--primary_color); 
+  padding: 20px; 
+  text-align: center;
+}
+
+.footer_box {
+  max-width: 960px; 
+  margin: 0 auto;
+}
+
+.footer h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 5px; 
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 40px 0px;
+  }
+
+  .nav {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #13252fa8;
+    z-index: 99999;
+    display: none;
+  }
+
+  .nav_bg {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: var(--primary_color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+  }
+
+  .nav_link {
+    font-size: 0.9rem;
+  }
+
+  .home_content h2 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .title_up h2 {
+    font-size: 1.5rem;
+  }
+
+  .food_desc h3 {
+    font-size: 0.9rem;
+  }
+
+  .food_price {
+    font-size: 1rem;
+  }
+
+  .home_content, .home_img {
+    width: 100%;
+  }
+
+  .home_bg {
+    flex-wrap: wrap;
+  }
+
+  .food_bg_small, .food_bg, .menu_bg_small, .blog_item {
+    width: 100%;
+  }
+
+  .food_bg {
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+  }
+
+  .footer_bottom {
+    font-size: 0.8rem;
+  }
+
+  .home_content {
+    padding-top: 0;
+    margin-bottom: 40px;
+  }
+
+  @media only screen and (max-width: 576px) {
+
+    .container {
+      padding: 0 10px;
+    }
+  
+  }
+
+
+}
